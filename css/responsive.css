@@ -72,7 +72,7 @@
     font-size: 14px;
     line-height: 31px; }
   #footer-Content {
-    padding-top: 80px; }
+    padding-top: 20px; }
   #footer-Content .copyright {
     margin-top: 80px; }
   .hero-area .contents h2 {
@@ -411,8 +411,6 @@
     font-size: 18px; }
   #blog .blog-item-wrapper a.read-more {
     font-size: 12px; }
-  #footer-Content {
-    padding-top: 100px; }
   #footer-Content .copyright {
     margin-top: 100px; }
   .hero-area .contents p {
