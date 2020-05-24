@@ -97,6 +97,9 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   line-height: 26px;
   margin-bottom: 0; }
 
+header {
+  height: 100vh;
+}
 /* ==========================================================================
    Buttons
    ========================================================================== */
@@ -454,20 +457,24 @@ button:focus {
    Hero Area
    ========================================================================== */
 .hero-area {
-  position: relative; }
+  position: relative;
+}
   .hero-area .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0px;
     left: 0px;
-    background: #dc4c1d;
-    background: linear-gradient(95deg, rgb(175, 165, 165), #dc4c1d);;
-    -webkit-transform: skewY(-12deg);
-    transform: skewY(-12deg);
-    -webkit-transform-origin: 0;
-    transform-origin: 0;
-    z-index: -12; }
+    background: linear-gradient(0deg, rgba(175, 165, 165, 0.15), rgba(95, 34, 15, 0.64)), url(../img/home-background.jpg);
+    background-size: cover;
+    /*background: #dc4c1d;*/
+    /*background: linear-gradient(95deg, rgb(175, 165, 165), #dc4c1d);*/
+    /*-webkit-transform: skewY(-12deg);*/
+    /*transform: skewY(-12deg);*/
+    /*-webkit-transform-origin: 0;*/
+    /*transform-origin: 0;*/
+    /*z-index: -12; }*/
+  }
     .hero-area .overlay :nth-child(1) {
       width: 33.33333%;
       width: calc(100% / 2);
@@ -488,12 +495,18 @@ button:focus {
       height: 155px;
       left: 3%; }
   .hero-area .contents {
-    padding: 220px 0; }
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
     .hero-area .contents h2 {
+      font-family: 'Poppins', sans-serif;
       color: #fff;
       font-size: 38px;
       font-weight: 600;
-      line-height: 60px;
+      line-height: 50px;
       margin-bottom: 20px; }
     .hero-area .contents p {
       color: #fff;
@@ -519,13 +532,26 @@ button:focus {
         background: #fff;
         color: #dc4c1d; }
   .hero-area .intro-img {
-    padding: 180px 0 0px;}
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
     .hero-area .intro-img img {
       display: block;
       height: auto;
-      max-width: 100%;
+      max-width: 80%;
       border-radius: 10px;}
+    .home-col {
+      display: flex;
+      align-items: center;
+    }
 
+    #home .container {
+      height: 100%;
+    }
+      #home .container .row {
+        height: 100%;
+      }
 /* ==========================================================================
    About 
    ========================================================================== */
@@ -753,7 +779,7 @@ button:focus {
    Testimonial section
    ========================================================================== */
 #testimonial {
-  background: url(../img/testimonials-background.jpg) no-repeat center center;
+  background: url(../img/testimonial-background.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
