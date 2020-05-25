@@ -465,7 +465,7 @@ button:focus {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: linear-gradient(0deg, rgba(175, 165, 165, 0.15), rgba(95, 34, 15, 0.64)), url(../img/home-background.jpg);
+    background: linear-gradient(0deg, rgba(175, 165, 165, 0.15), rgba(95, 34, 15, 0.64)), url(../min-img/home-background.jpg);
     background-size: cover;
     /*background: #dc4c1d;*/
     /*background: linear-gradient(95deg, rgb(175, 165, 165), #dc4c1d);*/
@@ -620,21 +620,57 @@ button:focus {
       background: #c0c0c05e;
     }
     #features .feature-item .geotextil {
-      background-image: url("../img/products/geotextil.jpg");
+      background-image: url("../min-img/products/geotextil.jpg");
       background-size: 130%;
     }
+    #features .feature-item .sin-aluminio {
+      background-image: url("../min-img/products/sin-aluminio.png");
+      background-size: cover;
+      background-position: 5px -5px;
+    }
+    #features .feature-item .autoadhesiva {
+      background-image: url("../min-img/products/autoadhesiva.jpeg");
+      background-size: 130%;
+      background-position: center;
+    }
     #features .feature-item .aluminio {
-       background-image: url("../img/products/aluminio.jpg");
+       background-image: url("../min-img/products/aluminio.jpg");
        background-size: 130%;
      }
     #features .feature-item .aluminio-flex {
-      background-image: url("../img/products/aluminio_no_crack.jpg");
+      background-image: url("../min-img/products/aluminio_no_crack.jpg");
       background-size: 130%;
     }
     #features .feature-item .paint {
-      background-image: url("../img/products/pintura-asfaltica.jpeg");
+      background-image: url("../min-img/products/pintura-asfaltica.jpeg");
       background-position: bottom;
       background-size: 80%;
+    }
+    #features .feature-item .outer-div {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      height: 300px;
+    }
+    #features .feature-item .inner-div {
+      background-image: url("../min-img/products/techflex.JPG");
+      position: relative;
+      top: -27%;
+      background-size: 100%;
+      /* background-position-x: center; */
+      transform: rotate(-8.6deg);
+      width: 100%;
+      height: 460px;
+    }
+    @media (min-width: 990px) {
+      #features .feature-item .inner-div {
+        background-position-y: -104px;
+      }
+    }
+    @media (max-width: 990px) {
+      #features .feature-item .inner-div {
+        background-position-y: -15px;
+      }
     }
     #features .feature-item .feature-icon {
       width: 100px;
@@ -779,7 +815,7 @@ button:focus {
    Testimonial section
    ========================================================================== */
 #testimonial {
-  background: url(../img/testimonial-background.jpg) no-repeat center center;
+  background: url(../min-img/testimonial-background.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
